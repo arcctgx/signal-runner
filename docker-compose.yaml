@@ -1,0 +1,10 @@
+version: '3'
+services:
+  runner:
+    image: signal-runner
+    network_mode: "host"
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${HOME}/.Xauthority:/home/signal/.Xauthority:rw
