@@ -10,7 +10,9 @@ COPY signal-desktop-keyring.gpg /usr/share/keyrings/
 COPY signal-xenial.list /etc/apt/sources.list.d/
 
 RUN apt-get update \
-    && apt-get --no-install-recommends -y install signal-desktop=6.47.0 \
+    && apt-get --no-install-recommends -y install \
+      xdg-utils=1.1.3-2ubuntu1.20.04.2 \
+      signal-desktop=6.47.0 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
