@@ -12,3 +12,4 @@ services:
       - /var/run/user/1000/:/var/run/user/1000/
       - /tmp/.X11-unix/:/tmp/.X11-unix/
       - ${HOME}/.Xauthority:/home/signal/.Xauthority:ro
+      - ${HOME}/.config/Signal/:/home/signal/.config/Signal/
