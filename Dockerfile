@@ -16,7 +16,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd -g 100 -u 1000 --shell /bin/bash --create-home --no-user-group signal
+RUN useradd -u 1000 -g 100 --shell /bin/bash --create-home --no-user-group signal
 
 USER 1000:100
 
