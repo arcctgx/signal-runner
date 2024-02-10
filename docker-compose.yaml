@@ -1,6 +1,6 @@
 version: '3'
 services:
-  runner:
+  signal-desktop:
     image: signal-runner
     network_mode: "host"
     privileged: true
