@@ -16,6 +16,13 @@ docker-compose up
 Use `docker container prune` to clean up stopped containers after exiting
 signal-desktop.
 
+## Restrictions
+
+* Clicking URLs doesn't open them in host web browser.
+* Tray icon doesn't work in some desktop environments.
+* UID and GID are hardcoded to 1000 and 100, respectively.
+* Sound doesn't work (but it can probably be configured).
+
 ## Useful links
 
 <https://dzone.com/articles/docker-x11-client-via-ssh>
