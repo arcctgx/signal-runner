@@ -9,7 +9,7 @@ amusement, motivated by dislike of time-bombed software.
 ## Usage
 
 ```text
-make image
+make signal-runner
 docker-compose up
 ```
 

@@ -1,4 +1,4 @@
-.PHONY: image
+.PHONY: signal-runner
 
-image:
+signal-runner:
 	docker build -t signal-runner .
