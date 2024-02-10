@@ -22,4 +22,4 @@ USER 1000:100
 
 WORKDIR /home/signal/
 
-CMD ["/usr/bin/signal-desktop", "--no-sandbox"]
+CMD ["/usr/bin/signal-desktop", "--no-sandbox", "--use-tray-icon"]
