@@ -3,8 +3,12 @@ services:
   runner:
     image: signal-runner
     network_mode: "host"
+    privileged: true
     environment:
       - DISPLAY
+      - DBUS_SESSION_BUS_ADDRESS
     volumes:
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:rw
+      - /var/run/user/1000/:/var/run/user/1000/
       - /tmp/.X11-unix/:/tmp/.X11-unix/
       - ${HOME}/.Xauthority:/home/signal/.Xauthority:ro
