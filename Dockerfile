@@ -5,9 +5,9 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-COPY signal-desktop-keyring.gpg /usr/share/keyrings/
+COPY signal/signal-desktop-keyring.gpg /usr/share/keyrings/
 
-COPY signal-xenial.list /etc/apt/sources.list.d/
+COPY signal/signal-xenial.list /etc/apt/sources.list.d/
 
 RUN apt-get update \
     && apt-get --no-install-recommends -y install \
