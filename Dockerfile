@@ -22,4 +22,6 @@ USER 1000:100
 
 WORKDIR /home/signal/
 
+RUN mkdir temp
+
 ENTRYPOINT ["/usr/bin/signal-desktop", "--no-sandbox"]
