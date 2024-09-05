@@ -16,4 +16,4 @@ services:
       - /tmp/.X11-unix/:/tmp/.X11-unix/
       - ${HOME}/.Xauthority:/home/signal/.Xauthority:ro
       - ${HOME}/.config/Signal/:/home/signal/.config/Signal/
-      - ${HOME}/temp:/home/signal/temp/
+      - ${HOME}/tmp:/home/signal/tmp/
