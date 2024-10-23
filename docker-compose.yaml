@@ -1,7 +1,7 @@
 version: '3'
 services:
   signal-desktop:
-    image: signal-runner:7.17.0
+    image: signal-runner:7.29.0
     command: ["--use-tray-icon"]
     network_mode: "host"
     environment:
