@@ -1,7 +1,7 @@
 FROM ubuntu:focal-20240123
 
 RUN apt-get update \
-    && apt-get --no-install-recommends -y install ca-certificates=20230311ubuntu0.20.04.1 \
+    && apt-get --no-install-recommends -y install ca-certificates=20240203~20.04.1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
