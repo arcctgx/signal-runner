@@ -1,7 +1,8 @@
 version: '3'
 services:
   signal-desktop:
-    image: arcctgx/signal-runner:8.1.0
+    image: arcctgx/signal-runner:8.13.0
+    privileged: true
     command: ["--use-tray-icon"]
     network_mode: "host"
     environment:
