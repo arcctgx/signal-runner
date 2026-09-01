@@ -14,7 +14,7 @@ COPY signal/signal-xenial.list /etc/apt/sources.list.d/
 RUN apt-get update \
     && apt-get --no-install-recommends -y install \
       xdg-utils \
-      signal-desktop=8.13.0 \
+      signal-desktop=8.25.0 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
